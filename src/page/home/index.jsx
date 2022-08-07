@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import "./style.css";
 
 export function Home() {
+  useEffect(() => {
+    const url = `https://api.github.com/users/repos`;
+    console.log(url);
+  });
+
   return (
     <div>
       <div className="container">
-        <div className="head">
+        <div className="header">
           <h1>GitHub Repository Tracker</h1>
         </div>
 
