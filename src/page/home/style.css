@@ -1,0 +1,135 @@
+.container {
+  width: 100vh;
+  height: 50vh;
+
+  background-color: rgb(69, 68, 68);
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px 2px rgba(54, 54, 54, 0.82);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: #061066;
+  color: #fff;
+
+  padding: 15px;
+  border-bottom: 4px solid rgba(252, 252, 255, 0.952);
+}
+
+.form-camp {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+input {
+  width: 60%;
+  padding: 8px;
+  border: 2px solid rgb(5, 54, 139);
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(241, 241, 241);
+}
+
+button {
+  width: 15%;
+  padding: 6px;
+  background-color: #061066;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+  background-color: rgb(18, 18, 105);
+}
+
+section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+  list-style: none;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+ul li {
+  width: auto;
+  background-color: rgb(208, 209, 210);
+  border: 2px solid rgb(35, 90, 186);
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+ul li:hover {
+  background-color: rgba(107, 105, 105, 0.659);
+  cursor: pointer;
+  transform: scaleY(1.1);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.user-not-found {
+  background-color: rgb(18, 18, 105);
+  width: auto;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 30px;
+  position: absolute;
+  font-size: 18px;
+  color: #fff;
+}
+
+.empty {
+  background-color: rgb(18, 18, 105);
+  width: auto;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 10px;
+  position: absolute;
+  font-size: 18px;
+  margin-top: 30px;
+  color: #fff;
+}
+
+/* visible and hiden */
+
+.nf-visible {
+  visibility: hidden;
+}
+
+.em-visible {
+  visibility: hidden;
+}
+
+.list-visible {
+  visibility: hidden;
+}
