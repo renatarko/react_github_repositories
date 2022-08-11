@@ -1,0 +1,36 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+  list-style: none;
+  padding: 12px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+ul li {
+  width: auto;
+  background-color: rgb(241, 241, 241);
+  border: 2px solid rgb(35, 90, 186);
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+ul li:hover {
+  background-color: rgb(35, 90, 186);
+  cursor: pointer;
+  transform: scaleY(1.05);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(241, 241, 241);
+}

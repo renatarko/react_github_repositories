@@ -1,34 +1,24 @@
 .container {
-  width: 100vh;
-  height: 50vh;
+  width: 600px;
+  min-height: 300px;
 
-  background-color: rgb(69, 68, 68);
+  background-color: rgb(61, 61, 63);
   border-radius: 10px;
   box-shadow: 2px 5px 5px 2px rgba(54, 54, 54, 0.82);
   overflow: hidden;
-}
-
-.header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-
-  background-color: #061066;
-  color: #fff;
-
-  padding: 15px;
-  border-bottom: 4px solid rgba(252, 252, 255, 0.952);
 }
 
 .form-camp {
+  width: 600px;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 30px;
+  justify-content: space-around;  
 }
 
 input {
-  width: 60%;
+  width: 70%;
   padding: 8px;
   border: 2px solid rgb(5, 54, 139);
   border-radius: 10px;
@@ -51,60 +41,28 @@ button {
 }
 
 button:hover {
+  background-color: #0a1a2e;
+}
+
+  button:disabled {
+    background-color: red;
+  
+}
+
+button:hover {
   background-color: rgb(18, 18, 105);
-}
-
-section {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4px;
-  align-items: center;
-  list-style: none;
-  padding: 12px;
-  margin-bottom: 10px;
-}
-
-ul li {
-  width: auto;
-  background-color: rgb(208, 209, 210);
-  border: 2px solid rgb(35, 90, 186);
-  padding: 10px;
-  border-radius: 5px;
-  transition: 0.2s;
-}
-
-ul li:hover {
-  background-color: rgba(107, 105, 105, 0.659);
-  cursor: pointer;
-  transform: scaleY(1.1);
-}
-
-a {
-  text-decoration: none;
-  color: black;
 }
 
 .user-not-found {
   background-color: rgb(18, 18, 105);
-  width: auto;
-  display: flex;
-  justify-content: center;
+  width:auto;
   padding: 15px;
   border-radius: 10px;
   margin-top: 30px;
-  position: absolute;
   font-size: 18px;
   color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 .empty {
@@ -114,7 +72,6 @@ a {
   justify-content: center;
   padding: 15px;
   border-radius: 10px;
-  position: absolute;
   font-size: 18px;
   margin-top: 30px;
   color: #fff;
