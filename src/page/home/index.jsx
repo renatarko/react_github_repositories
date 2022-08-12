@@ -1,13 +1,19 @@
 import { useEffect, useState } from "react";
-import { fackGitHubAPI } from "./api"
 import "./style.css";
 import { Header } from "../../components/header";
 import { Card } from "../../components/card";
 import { Loading } from "../../components/loading";
 
-
-
-
+const Form = ({handleSubmit, setUser, user}) => {
+  return (
+    <form onSubmit={handleSubmit}  className="form" id="form">
+          <div className="form-camp">
+            <input type="text" value={user} onChange={(event) => setUser(event.target.value)} placeholder="Type the GitHub username" />
+            <button type="submit">Search</button>
+          </div>
+        </form>
+  );   
+}
 
 export function Home() {
 
@@ -15,7 +21,7 @@ export function Home() {
   const [repos, setRepos] = useState();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-
+  
 async function handleSubmit(event) {
   event.preventDefault();
   setLoading(true)
@@ -44,13 +50,7 @@ setLoading(false)
     <div>
       <div className="container">
        <Header />
-
-        <form onSubmit={handleSubmit}  className="form" id="form">
-          <div className="form-camp">
-            <input type="text" value={user} onChange={(event) => setUser(event.target.value)} placeholder="Type the GitHub username" />
-            <button type="submit" >Search</button>
-          </div>
-        </form>
+        <Form handleSubmit={handleSubmit} setUser={setUser} user={user} />
           
          {error && <div className="user-not-found">
              <p>Sorry! User not found</p>
